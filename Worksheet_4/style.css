@@ -1,0 +1,116 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0%;
+}
+header {
+   padding-left : 2rem;
+   padding-right : 2rem;
+   padding-top : 1rem;
+   padding-bottom : 1rem;
+   background-color: #0D0A0B;
+   color: white;
+   font-style: italic;
+}
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #D36582;
+    }
+    li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+main {
+    width: 60vw;
+    padding : 2rem;
+    margin: none;
+}
+h2 {
+    font-size: 2rem;
+    font-family: Georgia, serif, italic;
+    margin: none;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+div.article_info {
+    border-bottom: lightgray 1px solid;
+    border-top: lightgray 1px solid;
+}
+div.by {
+    font-size: 1rem;
+    color: lightgray;
+}
+div.puplished {
+    font-size: 1rem;
+    font-weight: bold;
+    color: lightgray;
+}
+div.date {
+    font-size: 1rem;
+    color: lightgray;
+}
+div.datePuplished div{
+    display: inline;
+}
+div.summary {
+    line-height: 1.5rem;
+    a {
+        color: #D16666;
+        text-decoration: none;
+    }
+    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+    border-bottom: #D16666 1px dashed;
+}
+div.comments {
+    text-align: right;
+    a {
+        background-color: #D16666;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;      
+    }
+    a:hover {
+            background-color: #C94065;
+        }
+}
+div.sidenav {
+    width: 35vw;
+    position: left;
+    margin: 2rem;
+    border: #D36582 2px solid;
+    line-height: 2rem;
+    a{
+        color: #D16666;
+    }
+    h2{
+        background-color: #D36582;
+        color: white;
+        padding: 1rem;
+        margin: 0rem;
+        font-size: 1rem;
+    }
+    li::marker {
+    font-weight: bold;
+    }
+}
+footer {
+    text-align: center;
+    background-color: #454955;
+    color: white;
+    padding: 2rem;
+    a {
+        color: white;
+    }
+}

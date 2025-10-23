@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+  width: 10%;
+}
+
+.slider {
+
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 5.2s;
+  transition: opacity 5.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+
+p {
+        color: rgb(r, g, b);
+    }
+.x.proximity-scroll-snapping {
+  scroll-snap-type: x proximity;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  font-family: monospace;
+}
+section {
+  display: flex;
+  margin: 1em auto;
+  outline: 0px dashed lightgray;
+  flex: none;
+  overflow: auto;
+}
+.x {
+  width: 12%;
+  height: 128px;
+  flex-flow: row nowrap;
+  overflow-y: hidden;
+}
+</style>
+</head>
+<body>
+
+<h1>Custom Range Slider</h1>
+<p>Drag the slider to display the current value.</p>
+
+</div>
+<section class="x proximity-scroll-snapping" dir="rtl">
+    
+      <input type="range" min="1" max="2" value="" class="slider" id="myRange">
+      
+      <p><span id="demo"></span> Mode </p>
+</div>
+<script>
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  if (slider.value == "1") {
+    output.innerHTML = "Light";
+    document.body.style.backgroundColor = "#FFFFFF";
+    var r = 0;
+    var g = 0;
+    var b = 0;
+    document.body.style.color = "rgb(" + r + "," + g + "," + b + ")";
+    set.value = 1;
+  } else if (slider.value == "2") {
+    output.innerHTML = "Dark";
+    document.body.style.backgroundColor = "#0D0D0D";
+    var r = 255;
+    var g = 255;
+    var b = 250;
+    document.body.style.color = "rgb(" + r + "," + g + "," + b + ")";
+    set.value = 9;
+  }
+}
+function getPositionX(event) {
+    return event.touches[0].clientX;
+}
+
+function touchStart(event) {
+    startPos = getPositionX(event);
+    sliderScroll = slider.scrollLeft;
+}
+
+function touchMove(event) {
+    currentPos = getPositionX(event);
+}
+
+function touchEnd() {
+    let distanceMoved = currentPos - startPos;
+    let slideIndex = Math.round(distanceMoved / slideWidth);
+    let setScrollPos = slideIndex * slideWidth;
+
+    slider.scrollLeft = setScrollPos;
+}
+
+</script>
+
+</body>
+</html>

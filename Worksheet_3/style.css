@@ -1,0 +1,60 @@
+/*Worksheet_3 Index file CSS*/
+header {
+   font-family: italic, Georgia, serif;
+   background-color: black;
+   color: white;
+}
+
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: grey;
+    a {
+        color: yellow;
+        text-decoration: none;
+    }
+}
+h2 {
+    font-size: 2rem;
+    font-family: Georgia, serif, italic;
+}
+div.by {
+    font-size: 1rem;
+    font-style: italic;
+}
+div.puplished {
+    font-size: 1rem;
+    font-weight: bold;
+}
+div.date {
+    letter-spacing: 0.25rem;
+}
+div.summary {
+    line-height: 1.5rem;
+    font-family: sans-serif;
+}
+div.comments {
+    text-align: right;
+}
+div.sidenav {
+
+   text-decoration: none;
+   h2{
+        background-color: grey;
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+footer {
+    text-align: center;
+    background-color: #7c007c;
+    color: white;
+    a {
+        color: white;
+    }
+}
+div.datePuplished div{
+    display: inline;
+}
