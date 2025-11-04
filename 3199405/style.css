@@ -55,11 +55,11 @@ main {
     padding : 2rem;
     border-bottom: #0D0A0B 2px solid;
     background-color: beige;
-    a:link{
+    a:link {
         text-decoration: none;
         color: #002830;
     }
-    a:hover{
+    a:hover {
         color: #006E8A;
         text-decoration: underline;
     }
@@ -87,18 +87,18 @@ footer {
     }
 }
 /*Griffith Colloge Logo*/
-div.gclink{
+div.gclink {
     img {
         width: 14rem;
         height: auto;
     }
 }
 /*Personal Profile area*/
-div.personalProfile{
+div.personalProfile {
     display: flex;
 }
 /*Personal picture sizing and border*/
-div.personalPicture{
+div.personalPicture {
     img {
         width: 12rem;
         height: auto;
@@ -107,7 +107,7 @@ div.personalPicture{
     }
 }
 /*general pictures*/
-div.picture{
+div.picture {
     img {
         width: 10rem;
         height: auto;
@@ -116,23 +116,88 @@ div.picture{
     }
 }
 /*layout and link for the quote page*/
-#quote{
+#quote {
     display: flex;
     a {
         margin-top: 1rem;
         font-size: 1.2rem;
     }
 }
-
+/*CV page css*/
+#cv {
+    display: flex;
+    justify-content: space-between;
+    border: #0D0A0B 2px solid;
+    padding: 0.5rem;
+    background-color: lightgray;
+}
+div.rightSide {
+    border-left: #0D0A0B 2px solid;
+    padding-left: 0.5rem;
+    width: 30%;
+}
+div.leftSide {
+    width: 70%;
+    margin-right: 0.5rem;
+}
+div.skills {
+    border-top: #0D0A0B 2px dotted;
+}
+div.a {
+    text-align: right;
+    font-weight: bold;
+}
+div.languages {
+    border-bottom: #0D0A0B 2px dotted;
+    border-top: #0D0A0B 2px dotted;
+}
+div.examScores {
+    border-bottom: #0D0A0B 2px dotted;
+    border-top: #0D0A0B 2px dotted;
+}
+div.internships {
+    border-bottom: #0D0A0B 2px dotted;
+    border-top: #0D0A0B 2px dotted;
+}
+div.education {
+    border-bottom: #0D0A0B 2px dotted;
+}
+div.data {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0.5rem;
+    line-height: 2rem;
+}
+div.dataPersonalInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0.5rem;
+    line-height: 1.5rem;
+}
+div.date {
+    text-align: right;
+    font-weight: bold;
+    li {
+        list-style-type: none;
+    }
+}
+div.subName {
+    display: flex;
+}
+div.score {
+    li {
+        list-style-type: none;
+    }
+}
 /*Facts page opening boxes*/
 /*This part of the code is inspried from W3Schools*/
-#facts{
+#facts {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 /*Box Name of the lists*/
-.container {
+div.container {
     position: relative;
     border: #002830 2px solid;
     border-radius: 5%;
@@ -146,7 +211,7 @@ div.picture{
     }
 }
 /*ınside moving boxes*/
-.overlay {
+div.overlay {
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -160,12 +225,12 @@ div.picture{
     border-radius: 5%;
 }
 /*moving element*/
-.container:hover .overlay {
+div.container:hover .overlay {
     bottom: 0;
     height: 100%;
 }
 /*text transformation*/
-.text {
+div.text {
     white-space: nowrap; 
     color: black;
     font-size: 1rem;
