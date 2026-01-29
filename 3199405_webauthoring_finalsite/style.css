@@ -1,0 +1,282 @@
+/*General CSS for Assigment 3*/
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0%;
+    min-height: 100dvh;
+    background-color: #fafcfe;
+
+    a:hover{
+        color: #FFC100;
+    }
+}
+/*Header area*/
+header {
+    display: flex;
+    padding-left : 2rem;
+    padding-right : 2rem;
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+    background-color: #FF6500;
+    color: #e7edf3;
+    justify-content: center;
+    /*Background image is from vecteezy under free license made by Ahmad Juliyanto no name change has been made to the file.
+    Here is the site url for the image: https://www.vecteezy.com/photo/69182526-desert-sunset-motorbike-rider-silhouette-adventure-travel-poster*/
+    background-image: url('Images/vecteezy_desert-sunset-motorbike-rider-silhouette-adventure-travel_69182526.jpg');
+    background-size: cover;
+    background-position: center 10%;
+    height: 15rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    a {
+        color: #CCCCCC;   
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+    img {
+        width: 12rem;
+        height: auto;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+}
+
+/*Navigation Area*/
+nav {
+    display: flex;
+    align-items: center;     
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: #FF6500 2px solid;
+    border-top: #FF6500 2px solid;
+    background-color: #C40C0C;
+    margin-left: auto;
+    justify-content: center;
+    ul {
+        display: flex;
+        align-items: center;   
+        list-style: none;
+        margin: 0;
+        padding: .5rem 1rem;
+    }
+    li {
+        margin-left: 1rem;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+}
+
+/*main area general*/
+main {
+    padding : 2rem;
+    border-bottom: #0D0A0B 2px solid;
+    background-color: #F6F1E9;
+    align-items: center;
+}
+
+.latestPosts, .subMenuContent1, .subMenuContent2 {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.return {
+    margin-bottom: 1rem;
+    a {
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+    
+}
+.content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+    .banner {
+        img {
+            width: 15rem;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .welcome {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+.personalProfile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    .personalPicture {
+        img {
+            width: 12rem;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+article.post, .subContent, .personalProfile {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: #CCCCCC 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    a {
+        color: black;    
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+    a:hover{
+        color: #FFC100;
+    }
+    h3 {
+        margin-top: 0;
+    }
+}
+.subContent{
+    display: block;
+}
+article.post img {
+    width: 22rem;
+    height: auto;
+    border-radius: 8px;
+    padding-left: 1rem;
+}
+
+/*Footer area with griffith logo and student name/number*/
+footer {
+    text-align: center;
+    background-color: #FF6500;
+    color: #e7edf3;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /*Background image is from vecteezy under free license made by icon ade no name change has been made to the file.
+    Here is the site url for the image: https://www.vecteezy.com/photo/36226636-ai-generated-rubber-textures-background*/
+    background-image: url('Images/vecteezy_ai-generated-rubber-textures-background_36226636.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    a {
+        color: #e7edf3;
+    }
+    .extraInfo{
+        font-size: 0.7rem;
+    }
+}
+/*Griffith Colloge Logo*/
+.gclink {
+    img {
+        width: 16rem;
+        height: auto;
+    }
+}
+
+/* Mobile flex direction control*/
+@media (max-width: 800px) {
+    .latestPosts, .subMenuContent1, .subMenuContent2, footer {
+        flex-direction: column;
+    }
+}
+/* Mobile content area adjustments images creates problem with layout */
+@media (max-width: 800px) {
+    .content {
+        display: inline-block;
+        .banner {
+            img {
+                display: none;
+            }
+        }
+    }
+    .personalProfile {
+        .personalPicture {
+            img {
+                width: 6rem;
+                height: auto;
+            }
+        }
+    }
+    article.post{
+        display: inline-block;
+        img {
+        display: none;
+        }
+    }
+}
+/* Mobile menu button (hidden on desktop)*/
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Mobile styles for the navigation*/
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        float: left;
+        border-radius: 1rem;
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    /*Show button on mobile */
+    .menu-toggle {
+        display: block; 
+    }
+
+    /*Hidden by default */
+    nav ul {
+        display: none; 
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0.75rem 1rem;
+    }
+
+    /*Show the menu when the 'show' class is added this is handled by the toggleButton.js file*/
+    nav ul.show {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.503) ;
+        width: auto;
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+    }
+}
