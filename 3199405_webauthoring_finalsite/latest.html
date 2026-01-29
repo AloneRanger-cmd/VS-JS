@@ -25,7 +25,14 @@
                 <li><a href="aboutM.html">About Me</a></li>                
             </ul>
             <!-- Mobile menu toggle script Thİs works by addıng or removıng show class to nav ul wıth this script, then css file changes the display from none to flex -->
-            <script src="toggleButton.js"></script>
+            <script>// toggleButton.js file to handle the toggle button functionality for mobile navigation//
+                // Thıs script adds an event lıstener to the toggle button that toggles the 'show' class on the nav links ul element //
+                const toggleButton = document.querySelector(".menu-toggle");
+                const navLinks = document.querySelector(".nav-links");
+
+                toggleButton.addEventListener("click", () => {
+                    navLinks.classList.toggle("show");
+                });</script>
         </nav>
 <!--Main Area Only Thing That Changes Between Pages -->
 		<main>

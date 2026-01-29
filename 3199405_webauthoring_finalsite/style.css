@@ -253,6 +253,9 @@ footer {
         border-radius: 1rem;
         background-color: transparent;
         border-color: transparent;
+        a{
+            color: black;
+        }
     }
 
     /*Show button on mobile */
