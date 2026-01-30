@@ -88,13 +88,14 @@ main {
     background-color: #F6F1E9;
     align-items: center;
 }
-
+/*Latest posts and submenu area*/
 .latestPosts, .subMenuContent1, .subMenuContent2 {
     display: flex;
     gap: 2rem;
     justify-content: space-around;
     margin-bottom: 2rem;
 }
+/*Return to top link*/
 .return {
     margin-bottom: 1rem;
     a {
@@ -107,6 +108,7 @@ main {
     }
     
 }
+/*General content area styling*/
 .content {
     display: flex;
     align-items: center;
@@ -127,6 +129,7 @@ main {
         margin-bottom: 2rem;
     }
 }
+/*About Me Page*/
 .personalProfile {
     display: flex;
     gap: 2rem;
@@ -140,6 +143,7 @@ main {
         }
     }
 }
+/*Posts and sub content area styling*/
 article.post, .subContent, .personalProfile {
     display: flex;
     flex: 1;
