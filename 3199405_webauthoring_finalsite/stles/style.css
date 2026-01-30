@@ -22,7 +22,7 @@ header {
     justify-content: center;
     /*Background image is from vecteezy under free license made by Ahmad Juliyanto no name change has been made to the file.
     Here is the site url for the image: https://www.vecteezy.com/photo/69182526-desert-sunset-motorbike-rider-silhouette-adventure-travel-poster*/
-    background-image: url('Images/vecteezy_desert-sunset-motorbike-rider-silhouette-adventure-travel_69182526.jpg');
+    background-image: url('../Images/vecteezy_desert-sunset-motorbike-rider-silhouette-adventure-travel_69182526.jpg');
     background-size: cover;
     background-position: center 10%;
     height: 15rem;
@@ -183,7 +183,7 @@ footer {
     justify-content: space-between;
     /*Background image is from vecteezy under free license made by icon ade no name change has been made to the file.
     Here is the site url for the image: https://www.vecteezy.com/photo/36226636-ai-generated-rubber-textures-background*/
-    background-image: url('Images/vecteezy_ai-generated-rubber-textures-background_36226636.jpg');
+    background-image: url('../Images/vecteezy_ai-generated-rubber-textures-background_36226636.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
