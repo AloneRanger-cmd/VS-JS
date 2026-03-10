@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/baseLayout.astro";
+---
+<link rel="stylesheet" href="../../styles/playlist.css">
+<BaseLayout title="Playlist Page">
+
+    <script is:inline src="../../scripts/playlist.js" defer></script>
+    
+    <div id="musicContainer">
+        <div class="input">
+            <input type="text" id="musicInput" placeholder="Enter Music">
+            <button id="addMusic">Add Music</button>
+            <button id="shufflebtn" class="btn">Shuffle Songs</button>
+        </div>
+        <!--Actual List Shuffled -->
+        <ul id="newList"></ul>
+    </div>
+    <!--Hidden List to Shuffle From-->
+    <div hidden>
+            <ul>
+                <li class="list">FCKD</li>
+                <li class="list">Drive</li>
+                <li class="list">Breed - Original Mix</li>
+                <li class="list">Spoiler - Original Mix</li>
+                <li class="list">Clockwork - Original Mix</li>
+                <li class="list">Pray For My Enemies</li>
+            </ul>
+        </div>
+</BaseLayout>
