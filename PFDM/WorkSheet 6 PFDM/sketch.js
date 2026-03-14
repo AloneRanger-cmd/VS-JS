@@ -9,7 +9,7 @@ function draw() {
     noLoop();
     noStroke();
     fill(255, 0, 0);
-    
+    // Draw a grid of shapes with random sizes and types
     for (let x = 50; x < width; x += 100) {
         for (let y = 50; y < height; y += 100) {
             let i = random(100);
